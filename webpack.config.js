@@ -31,12 +31,16 @@ module.exports = {
              }
            }
          ]
+       },
+       {
+         test: /\.(jpe?g|ico|png|gif|svg)$/i,
+         loader: 'file-loader?name=img/[name].[ext]'
        }
      ]
    },
    devServer: {
      host: "0.0.0.0",
-     port: "80",
+     port: "8080",
      publicPath: "/",
      contentBase: "./dist"
    }
